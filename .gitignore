@@ -1,3 +1,5 @@
-quarto-quickstart.html
+*.html
+*_cache/
+*_files/
 .venv
 .Rhistory
