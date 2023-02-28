@@ -71,15 +71,24 @@ df.head(5)
 
 ```
 
-The following is an R cell. The `df` variable defined above is available as `py$df`.
-
-Python variables should be accessible in R prefixed with `py$` . See the [reticulate cheat sheet](https://ugoproto.github.io/ugo_r_doc/pdf/reticulate.pdf) for more details on how to use Python and R together.
+The following is an R cell. The `df` variable defined above is available as `py$df`. Python variables should be accessible in R prefixed with `py$` .
 
 ```{r}
+
+title <- "Random points plotted"
 
 ggplot(py$df) +
     aes(x=A, y=B) +
     geom_point() +
     theme_minimal() +
-    ggtitle("Random points plotted")
+    ggtitle(title)
 ```
+
+R variables should be accessible in Python prefixed with `r.`
+
+```{python}
+
+r.title
+```
+
+See the [reticulate cheat sheet](https://ugoproto.github.io/ugo_r_doc/pdf/reticulate.pdf) for more details on how to use Python and R together.
