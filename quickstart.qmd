@@ -3,7 +3,7 @@ title: "quickstart"
 author: "Dhrumil Mehta"
 format: html
 editor: visual
-cache: true
+cache: false
 ---
 
 ## Python + R
@@ -41,7 +41,6 @@ When you click the **Render** button a document will be generated that includes 
 You can embed R code like this:
 
 ```{r}
-#| echo: false
 
 # Imports in R
 require('tidyverse')
@@ -62,7 +61,6 @@ import numpy as np
 The following code defines a dataframe `df` in Python with random data points.
 
 ```{python}
-#| echo: false
 
 # create a dataframe of random numbers with two columns, A and B
 df = pd.DataFrame(
