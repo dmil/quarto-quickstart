@@ -8,7 +8,7 @@ cache: false
 
 ## Python + R
 
-A workflow for using Python and R in the same notebook. For another setup that uses Jupyter Notebooks to do the same, see: https://github.com/dmil/jupyter-quickstart
+A workflow for using Python and R in the same notebook. For another setup that uses Jupyter Notebooks to do the same, see: <https://github.com/dmil/jupyter-quickstart>
 
 When you run this notebook, it should ask to install the `reticulate` package. Once that is installed correctly, you should be able to run both R and Python cells.
 
@@ -16,18 +16,17 @@ When you run this notebook, it should ask to install the `reticulate` package. O
 
 **Note**: The following cell creates a python virtualenv, installs some packages (like `pandas` and `scikit-learn`).
 
-https://rstudio.github.io/reticulate/articles/versions.html
+<https://rstudio.github.io/reticulate/articles/versions.html>
 
-```{r}
-#| echo: false
+```{r output=FALSE}
 
 library(reticulate)
-venv_path <- paste0(getwd(),'/.venv')
 
-# create virtualenv
-virtualenv_create(venv_path,
-                  packages=c("pandas", 
-                             "scikit-learn"))
+venv_path <- paste0(getwd(), '/.venv')
+
+# create virtualenv and install python libraries
+python_libraries <- c("pandas", "scikit-learn")
+virtualenv_create(venv_path, packages=python_libraries)
 
 # use virtualenv
 use_virtualenv(venv_path, required=TRUE)
@@ -40,17 +39,14 @@ When you click the **Render** button a document will be generated that includes 
 
 You can embed R code like this:
 
-```{r}
-
+```{r output=FALSE}
 # Imports in R
 require('tidyverse')
-
 ```
 
 And python code like this:
 
-```{python}
-
+```{python output=FALSE}
 # Imports in Python
 import pandas as pd
 import numpy as np
@@ -61,7 +57,6 @@ import numpy as np
 The following code defines a dataframe `df` in Python with random data points.
 
 ```{python}
-
 # create a dataframe of random numbers with two columns, A and B
 df = pd.DataFrame(
     np.random.randint(0,100,size=(100, 2)), columns=list('AB'))
@@ -74,7 +69,6 @@ df.head(5)
 The following is an R cell. The `df` variable defined above is available as `py$df`. Python variables should be accessible in R prefixed with `py$` .
 
 ```{r}
-
 title <- "Random points plotted"
 
 ggplot(py$df) +
@@ -87,7 +81,6 @@ ggplot(py$df) +
 R variables should be accessible in Python prefixed with `r.`
 
 ```{python}
-
 r.title
 ```
 
