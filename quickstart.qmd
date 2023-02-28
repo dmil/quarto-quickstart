@@ -52,7 +52,7 @@ import pandas as pd
 import numpy as np
 ```
 
-## Code
+## Sharing variables between Python and R
 
 The following code defines a dataframe `df` in Python with random data points.
 
