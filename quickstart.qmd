@@ -8,9 +8,19 @@ cache: false
 
 ## Python + R
 
-A workflow for using Python and R in the same quarto notebook. When you run this notebook, it should ask to install the `reticulate` package. Once that is installed correctly, you should be able to run both R and Python cells.
+A workflow for using Python and R in the same quarto notebook!
+
+## Installation
+
+When you run this notebook, it should ask to install the `reticulate` package. Once that is installed correctly, you should be able to run both R and Python cells.
 
 > Prefer to work in Jupyter notebooks? Check out this [alternate setup](https://github.com/dmil/jupyter-quickstart) that allows you to use Python and R together in a Jupyter notebook.
+
+⚠️ **Caveat:** to make this work, you may need to re-install Python.
+
+This setup only works if Python was installed with the `--enable-shared` option. I had to first uninstall python and then re-install it with the `--enable-shared` option. Since I use pyenv, I installed it as follows:
+
+    env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.11.2
 
 ## Setup
 
@@ -85,3 +95,20 @@ r.title
 ```
 
 See the [reticulate cheat sheet](https://ugoproto.github.io/ugo_r_doc/pdf/reticulate.pdf) for more details on how to use Python and R together.
+
+## Additional Thoughts
+
+#### Why I like this setup
+
+-   It lets me do some things in Python (hitting APIs, scraping, etc)
+
+-   It lets do other things in R (statistical calculations, visualization, etc)
+
+-   I have found it useful to learn R (or Python) while on deadline. When I was learning R it allowed me to switch back to Python if I was stuck on a step and the deadline was approaching, and then switch back to R to finish up.
+
+-   I have also found it helpful for teaching R to students who are already familiar with Python. I'm sure it can also be used well for the reverse.
+
+```{=html}
+<!-- -->
+```
+-   If your code starts to get complicated, you can move Python functions into `.py` files in the repo and then call those functions from the notebook. You can also define functions in R and save them into a `.R` file which you can call from this notebook. Storing code away in functions in separate files let me keep the notebooks very clean and readable and proved to be a good way to annotate my process for the quantitative edit.
