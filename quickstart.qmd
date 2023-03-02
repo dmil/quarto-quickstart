@@ -101,9 +101,7 @@ r.title
 
 See the [reticulate cheat sheet](https://ugoproto.github.io/ugo_r_doc/pdf/reticulate.pdf) for more details on how to use Python and R together.
 
-## Additional Thoughts
-
-#### Why I like this setup
+## Why I like this setup
 
 -   It lets me do some things in Python (hitting APIs, scraping, etc)
 
@@ -113,7 +111,4 @@ See the [reticulate cheat sheet](https://ugoproto.github.io/ugo_r_doc/pdf/reticu
 
 -   I have also found it helpful for teaching R to students who are already familiar with Python. I'm sure it can also be used well for the reverse.
 
-```{=html}
-<!-- -->
-```
 -   If your code starts to get complicated, you can move Python functions into `.py` files in the repo and then call those functions from the notebook. You can also define functions in R and save them into a `.R` file which you can call from this notebook. Storing code away in functions in separate files let me keep the notebooks very clean and readable and proved to be a good way to annotate my process for the quantitative edit.

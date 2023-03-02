@@ -189,11 +189,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>    A   B
-0  86  46
-1  98   3
-2  11  50
-3  72  74
-4  27  95</code></pre>
+0  55  88
+1  42   0
+2  81  86
+3   9  26
+4  99  12</code></pre>
 </div>
 </div>
 <p>The following is an R cell. The <code>df</code> variable defined above is available as <code>py$df</code>. Python variables should be accessible in R prefixed with <code>py$</code> .</p>
@@ -218,21 +218,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <p>See the <a href="https://ugoproto.github.io/ugo_r_doc/pdf/reticulate.pdf">reticulate cheat sheet</a> for more details on how to use Python and R together.</p>
 </section>
-<section id="additional-thoughts" class="level2">
-<h2 class="anchored" data-anchor-id="additional-thoughts">Additional Thoughts</h2>
-<section id="why-i-like-this-setup" class="level4">
-<h4 class="anchored" data-anchor-id="why-i-like-this-setup">Why I like this setup</h4>
+<section id="why-i-like-this-setup" class="level2">
+<h2 class="anchored" data-anchor-id="why-i-like-this-setup">Why I like this setup</h2>
 <ul>
 <li><p>It lets me do some things in Python (hitting APIs, scraping, etc)</p></li>
 <li><p>It lets do other things in R (statistical calculations, visualization, etc)</p></li>
 <li><p>I have found it useful to learn R (or Python) while on deadline. When I was learning R it allowed me to switch back to Python if I was stuck on a step and the deadline was approaching, and then switch back to R to finish up.</p></li>
 <li><p>I have also found it helpful for teaching R to students who are already familiar with Python. I’m sure it can also be used well for the reverse.</p></li>
+<li><p>If your code starts to get complicated, you can move Python functions into <code>.py</code> files in the repo and then call those functions from the notebook. You can also define functions in R and save them into a <code>.R</code> file which you can call from this notebook. Storing code away in functions in separate files let me keep the notebooks very clean and readable and proved to be a good way to annotate my process for the quantitative edit.</p></li>
 </ul>
-<!-- -->
-<ul>
-<li>If your code starts to get complicated, you can move Python functions into <code>.py</code> files in the repo and then call those functions from the notebook. You can also define functions in R and save them into a <code>.R</code> file which you can call from this notebook. Storing code away in functions in separate files let me keep the notebooks very clean and readable and proved to be a good way to annotate my process for the quantitative edit.</li>
-</ul>
-</section>
 </section>
 
 </main>
