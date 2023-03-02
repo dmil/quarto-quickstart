@@ -132,8 +132,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <section id="python-r" class="level2">
 <h2 class="anchored" data-anchor-id="python-r">Python + R</h2>
-<p>A workflow for using Python and R in the same notebook. For another setup that uses Jupyter Notebooks to do the same, see: <a href="https://github.com/dmil/jupyter-quickstart" class="uri">https://github.com/dmil/jupyter-quickstart</a></p>
-<p>When you run this notebook, it should ask to install the <code>reticulate</code> package. Once that is installed correctly, you should be able to run both R and Python cells.</p>
+<p>A workflow for using Python and R in the same quarto notebook. When you run this notebook, it should ask to install the <code>reticulate</code> package. Once that is installed correctly, you should be able to run both R and Python cells.</p>
+<blockquote class="blockquote">
+<p>Prefer to work in Jupyter notebooks? Check out this <a href="https://github.com/dmil/jupyter-quickstart">alternate setup</a> that allows you to use Python and R together in a Jupyter notebook.</p>
+</blockquote>
 </section>
 <section id="setup" class="level2">
 <h2 class="anchored" data-anchor-id="setup">Setup</h2>
@@ -179,11 +181,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>    A   B
-0  29  73
-1  45  44
-2  41  57
-3  22  87
-4  18  46</code></pre>
+0  65  11
+1  90   1
+2  68  69
+3  42  55
+4   4  81</code></pre>
 </div>
 </div>
 <p>The following is an R cell. The <code>df</code> variable defined above is available as <code>py$df</code>. Python variables should be accessible in R prefixed with <code>py$</code> .</p>

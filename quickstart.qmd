@@ -8,9 +8,9 @@ cache: false
 
 ## Python + R
 
-A workflow for using Python and R in the same notebook. For another setup that uses Jupyter Notebooks to do the same, see: <https://github.com/dmil/jupyter-quickstart>
+A workflow for using Python and R in the same quarto notebook. When you run this notebook, it should ask to install the `reticulate` package. Once that is installed correctly, you should be able to run both R and Python cells.
 
-When you run this notebook, it should ask to install the `reticulate` package. Once that is installed correctly, you should be able to run both R and Python cells.
+> Prefer to work in Jupyter notebooks? Check out this [alternate setup](https://github.com/dmil/jupyter-quickstart) that allows you to use Python and R together in a Jupyter notebook.
 
 ## Setup
 
