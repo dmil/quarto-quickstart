@@ -1,7 +1,10 @@
 ---
 title: "quickstart"
 author: "Dhrumil Mehta"
-format: html
+format: 
+   html: 
+    output-file: "index"
+    output-ext:  "html"
 editor: visual
 cache: false
 ---
