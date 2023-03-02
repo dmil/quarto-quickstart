@@ -10,11 +10,13 @@ cache: false
 
 A workflow for using Python and R in the same quarto notebook!
 
+GitHub Repo: <https://github.com/dmil/quarto-quickstart>
+
+> Prefer to work in Jupyter notebooks? Check out this [alternate setup](https://github.com/dmil/jupyter-quickstart) that allows you to use Python and R together in a Jupyter notebook.
+
 ## Installation
 
 When you run this notebook, it should ask to install the `reticulate` package. Once that is installed correctly, you should be able to run both R and Python cells.
-
-> Prefer to work in Jupyter notebooks? Check out this [alternate setup](https://github.com/dmil/jupyter-quickstart) that allows you to use Python and R together in a Jupyter notebook.
 
 ⚠️ **Caveat:** to make this work, you may need to re-install Python.
 

@@ -133,13 +133,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="python-r" class="level2">
 <h2 class="anchored" data-anchor-id="python-r">Python + R</h2>
 <p>A workflow for using Python and R in the same quarto notebook!</p>
+<p>GitHub Repo: <a href="https://github.com/dmil/quarto-quickstart" class="uri">https://github.com/dmil/quarto-quickstart</a></p>
+<blockquote class="blockquote">
+<p>Prefer to work in Jupyter notebooks? Check out this <a href="https://github.com/dmil/jupyter-quickstart">alternate setup</a> that allows you to use Python and R together in a Jupyter notebook.</p>
+</blockquote>
 </section>
 <section id="installation" class="level2">
 <h2 class="anchored" data-anchor-id="installation">Installation</h2>
 <p>When you run this notebook, it should ask to install the <code>reticulate</code> package. Once that is installed correctly, you should be able to run both R and Python cells.</p>
-<blockquote class="blockquote">
-<p>Prefer to work in Jupyter notebooks? Check out this <a href="https://github.com/dmil/jupyter-quickstart">alternate setup</a> that allows you to use Python and R together in a Jupyter notebook.</p>
-</blockquote>
 <p>⚠️ <strong>Caveat:</strong> to make this work, you may need to re-install Python.</p>
 <p>This setup only works if Python was installed with the <code>--enable-shared</code> option. I had to first uninstall python and then re-install it with the <code>--enable-shared</code> option. Since I use pyenv, I installed it as follows:</p>
 <pre><code>env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.11.2</code></pre>
@@ -188,11 +189,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>    A   B
-0  18  92
-1  28  82
-2  61  62
-3  80  50
-4  92  88</code></pre>
+0  77  63
+1  84  92
+2  79   2
+3  66  48
+4  61  44</code></pre>
 </div>
 </div>
 <p>The following is an R cell. The <code>df</code> variable defined above is available as <code>py$df</code>. Python variables should be accessible in R prefixed with <code>py$</code> .</p>
