@@ -2,7 +2,7 @@
 
 Python + R notebook using Quarto!
 
-Example notebook: http://dhrumilmehta.com/quarto-quickstart/quickstart.html
+Example notebook: http://dhrumilmehta.com/quarto-quickstart
 
 ## Installation
 
